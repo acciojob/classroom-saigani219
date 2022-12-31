@@ -18,6 +18,12 @@ public class Student {
         return averageScore;
     }
 
+    public Student(String name, int age, double averageScore) {
+        this.name = name;
+        this.age = age;
+        this.averageScore = averageScore;
+    }
+
     public Student(){
 
     }

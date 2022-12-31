@@ -1,10 +1,10 @@
 package com.driver;
 
-import org.springframework.stereotype.Repository;
+		import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+		import java.util.ArrayList;
+		import java.util.HashMap;
+		import java.util.List;
 
 @Repository
 public class StudentRepository {
@@ -34,19 +34,19 @@ public class StudentRepository {
 	}
 
 	public Student getStudentByName(String studentName){
-			if(studentDb.containsKey(studentName))
-				return studentDb.get(studentName);
-			return null;
+		if(studentDb.containsKey(studentName))
+			return studentDb.get(studentName);
+		return null;
 	}
 
 	public Teacher getTeacherByName(String teacherName){
-			if (teacherDb.containsKey(teacherName))
-				return teacherDb.get(teacherName);
+		if (teacherDb.containsKey(teacherName))
+			return teacherDb.get(teacherName);
 		return null;
 	}
 
 	public List<String> getStudentsByTeacherName(String teacherName){
-			return teacherStudentDb.get(teacherName);
+		return teacherStudentDb.get(teacherName);
 	}
 
 	public List<String> getAllStudents(){

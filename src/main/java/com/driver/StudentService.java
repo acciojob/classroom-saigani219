@@ -10,8 +10,8 @@ public class StudentService {
 
 	@Autowired
 	StudentRepository studentRepository;
-
 	public void addStudent(Student student){
+
 		studentRepository.addStudentToDb(student);
 	}
 
@@ -19,30 +19,32 @@ public class StudentService {
 		studentRepository.addTeacherToDb(teacher);
 	}
 
-	public void addStudentTeacherPair(String teacherName, String studentName){
-		studentRepository.addStudentTeacherPair(teacherName, studentName);
+	public void deleteAllTeachers() {
+		studentRepository.deleteAllTeachers();
 	}
-	public Student getStudentByName(String name){
+
+	public void deleteTeacherByName(String teacher) {
+		studentRepository.deleteTeacherByName(teacher);
+	}
+
+	public void addStudentTeacherPair(String teacher, String student) {
+		studentRepository.addStudentTeacherPair(teacher, student);
+	}
+
+	public Student getStudentByName(String name) {
+
 		return studentRepository.getStudentByName(name);
 	}
 
-	public Teacher getTeacherByName(String name){
-		return studentRepository.getTeacherByName(name);
-	}
-
-	public List<String> getStudentsByTeacherName(String teacherName){
-		return studentRepository.getStudentsByTeacherName(teacherName);
-	}
-
-	public List<String> getAllStudents(){
+	public List<String> getAllStudents() {
 		return studentRepository.getAllStudents();
 	}
 
-	public void deleteTeacherByName(String teacherName){
-		studentRepository.deleteTeacherByName(teacherName);
+	public Teacher getTeacherByName(String name) {
+		return studentRepository.getTeacherByName(name);
 	}
 
-	public void deleteAllTeachers(){
-		studentRepository.deleteAllTeachers();
+	public List<String> getStudentsByTeacherName(String teacher) {
+		return studentRepository.getStudentsByTeacherName(teacher);
 	}
 }

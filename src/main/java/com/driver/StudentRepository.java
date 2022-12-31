@@ -67,6 +67,11 @@ public class StudentRepository {
 		for(String records : teacherStudentDb.keySet()){
 			teacherStudentDb.remove(records);
 		}
-
+		for(String studentNames : studentDb.keySet()){
+			studentDb.remove(studentNames);
+		}
+		for(String teacherNames : teacherDb.keySet()){
+			teacherDb.remove(teacherNames);
+		}
 	}
 }

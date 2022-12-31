@@ -13,13 +13,13 @@ public class Teacher {
         return name;
     }
 
-    public int getNumberOfStudents() {
-        return numberOfStudents;
-    }
-
-    public int getAge() {
-        return age;
-    }
+//    public int getNumberOfStudents() {
+//        return numberOfStudents;
+//    }
+//
+//    public int getAge() {
+//        return age;
+//    }
 
     public Teacher() {
 

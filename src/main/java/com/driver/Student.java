@@ -21,10 +21,12 @@ public class Student {
 
 
     public Student(){
-        name = "";
-        age = 0;
-        averageScore = 0.00;
+
     }
 
-
+    public Student(String name, int age, double averageScore) {
+        this.name = name;
+        this.age = age;
+        this.averageScore = averageScore;
+    }
 }

@@ -22,9 +22,12 @@ public class Teacher {
     }
 
     public Teacher() {
-        name = "";
-        numberOfStudents = 0;
-        age = 0;
+
     }
 
+    public Teacher(String name, int numberOfStudents, int age) {
+        this.name = name;
+        this.numberOfStudents = numberOfStudents;
+        this.age = age;
+    }
 }
